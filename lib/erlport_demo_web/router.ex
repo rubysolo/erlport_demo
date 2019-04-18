@@ -18,6 +18,8 @@ defmodule ErlportDemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/guess", PageController, :guess
+    post "/oracle", OracleController, :show
   end
 
   # Other scopes may use custom stacks.

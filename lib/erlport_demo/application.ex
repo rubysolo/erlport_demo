@@ -13,6 +13,7 @@ defmodule ErlportDemo.Application do
       # Starts a worker by calling: ErlportDemo.Worker.start_link(arg)
       # {ErlportDemo.Worker, arg},
       ErlportDemo.Train,
+      ErlportDemo.Oracle,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
