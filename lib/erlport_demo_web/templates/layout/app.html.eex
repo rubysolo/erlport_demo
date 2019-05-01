@@ -16,9 +16,11 @@
             <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
           </ul>
         </nav>
-        <a href="http://phoenixframework.org/" class="phx-logo">
+        <div>
+          <img src="<%= Routes.static_path(@conn, "/images/elixir.png") %>" alt="Elixir Logo"/>
           <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
+          <img src="<%= Routes.static_path(@conn, "/images/python.png") %>" alt="Python Logo"/>
+        </div>
       </section>
     </header>
     <main role="main" class="container">
