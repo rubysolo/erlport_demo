@@ -18,9 +18,11 @@
           </ul>
         </nav>
         <div>
-          <img src="<%= Routes.static_path(@conn, "/images/elixir.png") %>" alt="Elixir Logo"/>
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-          <img src="<%= Routes.static_path(@conn, "/images/python.png") %>" alt="Python Logo"/>
+          <a href="/">
+            <img src="<%= Routes.static_path(@conn, "/images/elixir.png") %>" alt="Elixir Logo"/>
+            <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+            <img src="<%= Routes.static_path(@conn, "/images/python.png") %>" alt="Python Logo"/>
+          </a>
         </div>
       </section>
     </header>

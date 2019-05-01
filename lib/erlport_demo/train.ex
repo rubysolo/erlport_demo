@@ -23,6 +23,7 @@ defmodule ErlportDemo.Train do
 
   def handle_info({:msg, msg}, state) do
     IO.inspect(msg, label: "got message")
+    ErlportDemo.LiveUpdates.notify_live_view({__MODULE__, :training_message, msg})
     {:noreply, %{state | messages: [msg | state.messages]}}
   end
 end

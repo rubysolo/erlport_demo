@@ -17,8 +17,9 @@ defmodule ErlportDemoWeb.Router do
   scope "/", ErlportDemoWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    get "/guess", PageController, :guess
+    get  "/",       PageController,   :index
+    get  "/train",  PageController,   :train
+    get  "/guess",  PageController,   :guess
     post "/oracle", OracleController, :show
   end
 
