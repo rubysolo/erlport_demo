@@ -13,6 +13,7 @@
       <section class="container">
         <nav role="navigation">
           <ul>
+            <li><a href="/train">Train</a></li>
             <li><a href="/guess">Guess</a></li>
           </ul>
         </nav>
